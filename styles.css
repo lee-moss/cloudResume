@@ -1,0 +1,197 @@
+/* styles.css */
+
+/* General styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Navbar styles */
+.navbar {
+    position: fixed;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    padding: 1em 0;
+    z-index: 10;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1em;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #3498db;
+}
+
+/* Hero section styles */
+.hero {
+    background: url('your-image-path.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-text {
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 6em;
+    margin: 0;
+
+        -webkit-text-stroke-width: 3px;
+        -webkit-text-stroke-color: black;
+
+}
+
+.hero h2 {
+    font-size: 2em;
+    margin: 0.5em 0;
+}
+
+/* Social icons styles */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 1em 0;
+}
+
+.social-icons li {
+    margin: 0 0.5em;
+}
+
+.social-icons a {
+    color: #000;
+    background: #fff;
+    width: 35px;
+    height: 35px;
+    line-height: 38px;
+    display: block;
+    text-align: center;
+    border-radius: 100%;
+    font-size: 16px;
+    margin: 15px 6px 12px 6px;
+    transition: all 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    color: #fff;
+    background: #3498db;
+}
+
+.social-icons a i {
+    line-height: inherit;
+}
+
+/* Cloud styles */
+.clouds {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    z-index: 2;
+}
+
+.cloud {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    width: 200px;
+    height: 100px;
+    position: relative;
+    animation: float 6s ease-in-out infinite;
+}
+
+.cloud::before,
+.cloud::after {
+    content: '';
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    position: absolute;
+}
+
+.cloud::before {
+    width: 150px;
+    height: 100px;
+    top: -50px;
+    left: 10px;
+}
+
+.cloud::after {
+    width: 120px;
+    height: 80px;
+    top: -40px;
+    right: 10px;
+}
+
+/* Cloud floating animation */
+@keyframes float {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(10px, -10px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+/* Section styles */
+.section-bg {
+    padding: 4em 2em;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.section-bg:nth-of-type(even) {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.section-bg h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.section-bg p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+/* Footer styles */
+.footer {
+    text-align: center;
+    padding: 2em 0;
+    background: #333;
+    color: #fff;
+}
