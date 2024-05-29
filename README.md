@@ -7,14 +7,12 @@ Welcome to my Cloud Resume Challenge project! This project involves deploying a 
 The Cloud Resume Challenge involves creating a static website to host your resume, deploying it on a cloud platform, and using various cloud services to demonstrate your skills. This project uses:
 - **Azure** for cloud infrastructure.
 - **Terraform** for Infrastructure as Code (IaC).
-- **GitHub Actions** for CI/CD pipeline.
 
 ## Architecture
 
 The project architecture includes:
 - **Azure Storage Account**: Hosting the static website.
-- **Azure CDN (Content Delivery Network)**: Distributing content globally with low latency (optional).
-- **Azure DNS**: Managing the custom domain (optional).
+- **Azure CDN (Content Delivery Network)**: Distributing content globally with low latency.
 
 ## Prerequisites
 
